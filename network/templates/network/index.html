@@ -1,0 +1,25 @@
+{% extends "network/layout.html" %}
+
+{% block body %}
+
+<div id="new-post" class="mb-4" style="border: 1px solide black;">
+    <h3>Create a new post!</h3>
+    <div id="test">
+    <textarea  id="post-content" rows="3" class="mb-2"  placeholder="The content of your post"></textarea>
+    <button id="submit-post" class="btn btn-primary" style="margin-left: 45%; height: 100px; width: 150px;">Post</button>
+    </div>
+</div>
+
+<div id="all-posts" style="display: none;">
+    <h3>All the posts</h3>
+    <div id="posts-container"></div>
+    <div id="paginator">
+        <button id="prev-page" class="btn btn-secondary">Previous</button>
+        <button id="next-page" class="btn btn-secondary">Next</button>
+    </div>
+</div>
+
+<div id="followings">
+
+</div>
+{% endblock %}
